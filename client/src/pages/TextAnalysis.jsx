@@ -102,15 +102,6 @@ function TextAnalysis() {
                   </div>
                 </div>
 
-                {results.spamDetection && (
-                  <div className="spam-mini">
-                    <span>Spam Score: </span>
-                    <span className={`spam-badge-mini ${results.spamDetection.level.toLowerCase()}`}>
-                      {results.spamDetection.isSpam ? '⚠️ Potential Spam' : '✅ Safe'}
-                    </span>
-                  </div>
-                )}
-
                 {results.sentiment && (
                   <div className="sentiment-mini">
                     <span>Sentiment: </span>

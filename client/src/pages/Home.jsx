@@ -20,12 +20,6 @@ function Home() {
       title: 'Grammar Check',
       description: 'Check your text for grammar and spelling errors with AI-powered analysis and suggestions.',
       path: '/grammar'
-    },
-    {
-      icon: '✨',
-      title: 'Auto Correct',
-      description: 'Automatically fix grammar and spelling errors with one click using advanced AI correction.',
-      path: '/correct'
     }
   ];
 

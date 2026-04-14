@@ -78,7 +78,12 @@ function SignUp() {
           <form onSubmit={handleSubmit} className="auth-form">
             {error && (
               <div className="auth-error">
-                <span>⚠️</span> {error}
+                <span>⚠️</span> 
+                <span>
+                  {error.includes('already exists') ? (
+                    <>An account with this email already exists. <Link to={`/signin?email=${encodeURIComponent(email)}`} className="auth-link">Sign In Here</Link></>
+                  ) : error}
+                </span>
               </div>
             )}
 
